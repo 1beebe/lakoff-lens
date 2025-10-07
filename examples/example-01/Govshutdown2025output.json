@@ -1,0 +1,74 @@
+{
+   "document_sentiment":"Negative",
+   "findings":[
+      {
+         "quote":"the government shutdown that began Wednesday is set to furlough food inspectors, park rangers and millions of other federal workers in Washington and across the nation",
+         "metaphors":[
+            "Body/Health",
+            "Machine/System"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The quote frames the government as a mechanical system experiencing systemic breakdown, with workers being 'furloughed' like components being switched off. The language suggests a clinical, impersonal process of institutional disruption.",
+         "confidence":"High",
+         "char_span":[
+            88,
+            270
+         ]
+      },
+      {
+         "quote":"Trump did the same thing when the government shut down during his first administration — a move that resulted in park visitors cutting down Joshua trees",
+         "metaphors":[
+            "Nature/Disaster"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The metaphorical framing depicts the shutdown as a destructive natural event, with human actors causing environmental damage. This suggests chaos and uncontrolled consequences emerging from political dysfunction.",
+         "confidence":"High",
+         "char_span":[
+            1036,
+            1210
+         ]
+      },
+      {
+         "quote":"The administration has good reason to keep at least some parts of the IRS well-staffed",
+         "metaphors":[
+            "Body/Health",
+            "Building/Structure"
+         ],
+         "sentiment":"Neutral",
+         "analysis":"Government agencies are metaphorically framed as living organisms or architectural structures that can be strategically maintained. The language suggests careful, deliberate management of institutional resources.",
+         "confidence":"Medium",
+         "char_span":[
+            4260,
+            4343
+         ]
+      },
+      {
+         "quote":"A shutdown results in 'a ripple throughout the food system'",
+         "metaphors":[
+            "Nature/Disaster",
+            "Body/Health"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The metaphor of a 'ripple' frames the shutdown as a disruptive wave propagating through interconnected systems. It evokes the idea of uncontrolled, cascading consequences spreading beyond initial impact.",
+         "confidence":"High",
+         "char_span":[
+            5365,
+            5430
+         ]
+      },
+      {
+         "quote":"the nation's top cyber defense agency is getting emptied out during the shutdown",
+         "metaphors":[
+            "War/Conflict",
+            "Body/Health"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The language of being 'emptied out' suggests a military metaphor of strategic depletion, with the cyber defense agency portrayed as vulnerable and weakened. It implies a sense of institutional evacuation and potential strategic risk.",
+         "confidence":"High",
+         "char_span":[
+            6090,
+            6180
+         ]
+      }
+   ]
+}
