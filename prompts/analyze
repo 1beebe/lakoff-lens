@@ -1,0 +1,56 @@
+<content>
+{{pageContent}}
+</content>
+
+You are a qualitative research assistant. Analyze the following political text for **sentiment** and **metaphorical framing** using the codebook below. Return structured JSON first, then a short prose note.
+
+Return the JSON wrapped in a fenced code block like:
+```json
+{ … }
+```
+Then on a new line add the context note (outside the code block).
+
+### Codebook (Metaphor Types)
+- War/Conflict
+- Journey/Progress
+- Family/Parenting
+- Machine/System
+- Body/Health
+- Nature/Disaster
+- Light/Vision
+- Marketplace/Economy
+- Building/Structure
+- Obstacle/Barriers
+- Other
+- None  ← use only if no metaphor applies
+
+### Requirements
+1) **Overall sentiment** for the whole document: Positive | Neutral | Negative.  
+2) **Quote-level findings**: Extract up to **5** of the most representative passages that contain a metaphor or important framing cue.  
+   - For each finding, include:
+     - `quote` → the **exact substring** from the document (verbatim).  
+     - `metaphors` → array of types from the codebook (["None"] if not applicable).  
+     - `sentiment` → Positive | Neutral | Negative for that quote.  
+     - `analysis` → **2–4 sentences** explaining *how* the quote uses that metaphor/framing and why it matters rhetorically. Be concrete (point to words/phrases).  
+     - `confidence` → High | Medium | Low.  
+     - `char_span` → `[start_index, end_index]` character offsets in the provided `Document` string (0-based). If uncertain, use `null`.  
+3) If uncertain about a mapping, set `confidence` to Low and briefly say why in `analysis`.  
+4) **Do not invent text**; quotes must be exact substrings of the input.  
+5) If **no metaphors** are found, return one finding with `metaphors: ["None"]` and explain why in `analysis`.
+
+```json
+{
+  "document_sentiment": "Positive | Neutral | Negative",
+  "findings": [
+    {
+      "quote": "…exact text from the document…",
+      "metaphors": ["MetaphorType1", "MetaphorType2"],
+      "sentiment": "Positive | Neutral | Negative",
+      "analysis": "2–4 sentences explaining the framing, citing key words, and why it matters.",
+      "confidence": "High | Medium | Low",
+      "char_span": [start, end]
+    }
+  ]
+}
+
+Respond with the JSON and nothing else.
