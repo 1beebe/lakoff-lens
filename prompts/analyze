@@ -26,14 +26,25 @@ Then on a new line add the context note (outside the code block).
 
 ### Requirements
 1) **Overall sentiment** for the whole document: Positive | Neutral | Negative.  
-2) **Quote-level findings**: Extract up to **5** of the most representative passages that contain a metaphor or important framing cue.  
-   - For each finding, include:
-     - `quote` → the **exact substring** from the document (verbatim).  
-     - `metaphors` → array of types from the codebook (["None"] if not applicable).  
-     - `sentiment` → Positive | Neutral | Negative for that quote.  
-     - `analysis` → **2–4 sentences** explaining *how* the quote uses that metaphor/framing and why it matters rhetorically. Be concrete (point to words/phrases).  
-     - `confidence` → High | Medium | Low.  
-     - `char_span` → `[start_index, end_index]` character offsets in the provided `Document` string (0-based). If uncertain, use `null`.  
+2)Quote-level findings: Identify all distinct passages that contain a metaphor or clear rhetorical framing cue (not just the five strongest).
+
+Aim to capture every unique metaphor type represented in the text, even if some overlap.
+
+For longer documents, you may summarize repetitive instances using representative examples.
+
+For each finding, include:
+
+quote → exact substring from the document (verbatim).
+
+metaphors → array of all types from the codebook that apply (["None"] if not applicable).
+
+sentiment → Positive | Neutral | Negative for that quote.
+
+analysis → 2–4 sentences explaining how the quote uses each metaphor/framing and why it matters rhetorically. Be concrete (point to words/phrases).
+
+confidence → High | Medium | Low.
+
+char_span → [start_index, end_index] character offsets in the provided Document string (0-based). If uncertain, use null.
 3) If uncertain about a mapping, set `confidence` to Low and briefly say why in `analysis`.  
 4) **Do not invent text**; quotes must be exact substrings of the input.  
 5) If **no metaphors** are found, return one finding with `metaphors: ["None"]` and explain why in `analysis`.
