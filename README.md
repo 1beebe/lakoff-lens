@@ -35,8 +35,8 @@ The goal was to see if an agent could:
 ## Features & Stack
 - Input: any political text (article, speech, transcript snippet)  
 - **MindStudio workflow** with two stages:  
-  1. **Analysis block** → JSON output (quotes, metaphors, sentiment, analysis notes, confidence, character spans)  
-  2. **Formatter block** → Markdown for human-friendly display  
+  1. **Analysis block** Claude 3.5 Haiku, Temp 0.5 → JSON output (quotes, metaphors, sentiment, analysis notes, confidence, character spans) 
+  3. **Formatter block** Gemini 2.0 Flash Lite, Temp 0.1 → Markdown for human-friendly display  
 - Outputs both **structured JSON** and **formatted Markdown**  
 - JSON fields include:  
   - `document_sentiment` (overall)  
