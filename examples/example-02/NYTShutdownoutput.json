@@ -1,0 +1,75 @@
+{
+   "document_sentiment":"Negative",
+   "findings":[
+      {
+         "quote":"In the upside-down political messaging surrounding the shutdown fight, conservative Republicans, usually eager to assail government largess, have transformed themselves into enthusiastic evangelists for federal spending and programs.",
+         "metaphors":[
+            "War/Conflict",
+            "Machine/System"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The phrase 'upside-down' and 'shutdown fight' frame political discourse as a conflict, while also suggesting the government is a mechanical system that can be manipulated. The metaphorical language highlights the performative and contradictory nature of political rhetoric.",
+         "confidence":"High",
+         "char_span":[
+            646,
+            906
+         ]
+      },
+      {
+         "quote":"The turnabout by Republicans who often rip government spending as riddled with waste, fraud and abuse and federal workers as soulless bureaucrats is one difference in the shutdown from previous ones.",
+         "metaphors":[
+            "Body/Health",
+            "Machine/System"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The metaphorical language of 'riddled' and 'soulless' depicts government as a diseased or mechanistic entity. This framing emphasizes the dehumanizing rhetoric Republicans typically use toward government workers and institutions.",
+         "confidence":"High",
+         "char_span":[
+            1340,
+            1570
+         ]
+      },
+      {
+         "quote":"Mr. Trump even shared on social media an A.I.-generated music video of Mr. Vought dressed as the Grim Reaper come to unleash his scythe on the federal bureaucracy.",
+         "metaphors":[
+            "Nature/Disaster",
+            "War/Conflict"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The Grim Reaper metaphor transforms budget cutting into a violent, apocalyptic act of destruction. By depicting Vought as a harbinger of death, the imagery suggests government reduction is a form of warfare against bureaucratic institutions.",
+         "confidence":"High",
+         "char_span":[
+            3280,
+            3460
+         ]
+      },
+      {
+         "quote":"When they start seeing pink slips go out at the E.P.A., at the Department of Labor, at the I.R.S., and suddenly, the bureaucrats that they are entrusting to advance their job-killing agenda are themselves without a job.",
+         "metaphors":[
+            "Marketplace/Economy",
+            "War/Conflict"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The language of 'pink slips' and 'job-killing' frames political conflict through economic warfare metaphors. Government work is depicted as a competitive marketplace where jobs are weapons and workers are disposable commodities.",
+         "confidence":"High",
+         "char_span":[
+            2800,
+            3050
+         ]
+      },
+      {
+         "quote":"They are like, 'Oh gee, this harm that's going to happen to all these people' — as if they haven't fired tens of thousands of people already.",
+         "metaphors":[
+            "Body/Health",
+            "War/Conflict"
+         ],
+         "sentiment":"Negative",
+         "analysis":"The metaphorical language of 'harm' suggests political actions have bodily consequences. The sarcastic tone frames political conflict as a destructive process where human suffering is a calculated strategic outcome.",
+         "confidence":"High",
+         "char_span":[
+            1050,
+            1230
+         ]
+      }
+   ]
+}
