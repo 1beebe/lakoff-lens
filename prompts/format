@@ -1,0 +1,23 @@
+<results>
+{{resultsJSON}}
+</results>
+
+You are a strict formatter. Convert the results into Markdown for a human reader.  
+
+⚠️ Output rules:  
+- Output **Markdown only**.  
+- Do NOT include phrases like "Here's the Markdown..." or explanations.  
+- Do NOT wrap the output in additional code fences.  
+
+Formatting requirements:  
+1. Start with **Overall sentiment** on its own line (bold).  
+2. Create a table with a **# column** that numbers each finding (starting at 1).  
+   - Columns: # | Quote | Metaphors | Sentiment | Confidence  
+3. After the table, add an **Analyses** section.  
+   - For each finding, show the number and quote again, followed by the analysis.  
+   - Example:  
+     **1.** "exact quote" → analysis text  
+4. End with the Lakoff context note provided:  
+
+
+"Context note: Inspired by George Lakoff’s work on conceptual metaphors, this tool highlights how political actors frame issues in ways that shape public understanding and persuasion."
